@@ -1,0 +1,103 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth !important;
+    
+}
+.section-padding{
+    padding: 70px 0;
+}
+body{
+    background-color: #f1fbff;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;    
+}
+.carousel-caption{
+    top:35%;
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    font-size: 18px;
+    width: 60%;
+    margin: auto;
+    line-height: 1.9;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0,0.6);
+    z-index: 1;
+}
+.navbar-brand{
+    letter-spacing: 2px;
+    font-size: 25px !important;
+}
+.navbar-nav a{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+}
+.navbar-nav a:hover{
+    border-bottom: 2px solid black;
+}
+.w-100{
+    height: 100vh;
+}
+
+.img1{
+    height: 550px;
+}
+
+
+
+@media only screen and (max-width:768px) {
+    .navbar-nav{
+        text-align: center;
+        
+    }
+    .carousel-caption{
+        bottom: 125px;
+    }
+    .carousel-caption h5{
+        font-size: 20px;
+    }
+    .carousel-caption a{
+        margin-top: 10px;
+        padding: 10px 15px ;
+        font-size: 12px;
+    }
+    .carousel-caption p{
+        width: 100%;
+        line-height: 1.6;
+        font-size: 12px ;
+    }
+    .about-info{
+        text-align: center;
+    }
+}
+@media only screen and (min-width:768px) and(max-width:991){
+    .carousel-caption{
+        bottom: 335px;
+    }
+    .carousel-caption h5{
+        font-size: 25px !important;
+    }
+    .carousel-caption p{
+        width: 100%;
+    }
+}
